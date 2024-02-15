@@ -1,3 +1,4 @@
+//Program to input a string and convert all its alphabets into Upper Case and Lower Case.
 #include <string.h>
 #include <stdio.h>
 
@@ -13,9 +14,7 @@ int main() {
       S[i] = S[i] + 32;
     }
   }
-  //for (int i = 0; i < l; i++) {
-    printf("%s", S);
- // }
+  printf("%s", S);
 
   printf("\nInput string in Upper Case.\n");
   for (int i = 0; i < l; i++) {
@@ -23,9 +22,7 @@ int main() {
       S[i] = S[i] - 32;
     }
   }
-  //for (int i = 0; i < l; i++) {
-    printf("%s", S);
-  //}
+  printf("%s", S);
 
   return 0;
 }
