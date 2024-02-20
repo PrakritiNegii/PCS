@@ -7,7 +7,7 @@ int main()
   scanf("%d",&n);
   printf("\nInput array elements.\n");
   for(int i=0; i<n; i++)
-    scanf("%d",%A[i]);
+    scanf("%d",&A[i]);
 
   for(int i=0; i<n; i++)
    {
@@ -24,7 +24,28 @@ int main()
           n--;
          }
      }
-    printf("\nThe number %d is present %d times in the input array.\n",i,c);
+    if(c>0)
+      printf("\nThe number %d is present %d times in the input array.\n",A[i],c+1);
    }
    return 0;
  }
+
+/*
+  OUTPUT
+
+Specify the size of the array.
+7
+
+Input array elements.
+12
+34
+12
+56
+78
+56
+12
+
+The number 12 is present 3 times in the input array.
+
+The number 56 is present 2 times in the input array.
+*/
