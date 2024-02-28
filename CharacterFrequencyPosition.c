@@ -4,7 +4,7 @@
 int main()
  {
    char S[100], c;
-0   int f = 1;
+   int f = 0;
    printf("\nInput a string:\n");
    fgets(S,100,stdin);
    printf("\nInput a character to be searched.\n");
