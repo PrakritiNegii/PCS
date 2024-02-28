@@ -1,4 +1,4 @@
-//Program to check whether a character is present in the string or not, if present display the position of the character.
+//Program to check whether a character is present in the string or not, if present display the position of the character and its frequency.
 #include<stdio.h>
 #include<string.h>
 int main()
