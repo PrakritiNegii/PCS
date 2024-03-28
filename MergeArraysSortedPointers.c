@@ -17,14 +17,20 @@ int main()
      {
        if(*(A+j)<*(B+k))
 	{
-	  *(C+i) = *(A+j);
-	  ++i; ++j;
+	 *(C+i) = *(A+j);
+	 ++i; ++j;
 	}
        if(*(A+j)>*(B+k))
 	{
-	  *(C+i) = *(B+k);
-	  ++i; ++k;
+	 *(C+i) = *(B+k);
+	 ++i; ++k;
 	}
+       if(*(A+j)==*(B+k))
+        {
+         *(C+i) = *(A+j);
+         *(C+i+1) = *(B+k);
+         i+=2; j++; k++;
+        }
      }
 
    if(j<n1)
@@ -82,4 +88,34 @@ After merging the two input arrays:
 11
 12
 13
+
+
+
+Specify sizes of both arrays.
+5
+4
+
+Input 5 elements in the first array in ascending order.
+2
+3
+3
+4
+7
+
+Input 4 elements in the second array in ascending order.
+2
+3
+5
+6
+
+After merging the two input arrays:
+2
+2
+3
+3
+3
+4
+5
+6
+7
 */
