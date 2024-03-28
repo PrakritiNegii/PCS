@@ -20,7 +20,7 @@ int main()
 
 void merge(char str1[], char str2[], int l1, int l2)
  {
-   int i-0;
+   int i=0;
    str1[l1] = ' ';
    while(str2[i]!='\0')
     {
