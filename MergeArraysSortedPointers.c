@@ -33,13 +33,13 @@ int main()
         }
      }
 
-   if(j<n1)
+   while(j<n1)
     {
       *(C+i) = *(A+j);
       ++i; ++j;
     }
 
-   if(k<n2)
+   while(k<n2)
     {
       *(C+i) = *(B+k);
       ++i; ++k;
